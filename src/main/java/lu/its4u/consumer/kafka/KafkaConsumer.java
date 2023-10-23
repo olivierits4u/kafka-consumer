@@ -13,7 +13,7 @@ public class KafkaConsumer {
 	public void consume(ConsumerRecord<String, Data> data) {
 		Data e = data.value();
 
-		System.out.println("recu:\n -- Id: " + e.getId() + "\n -- Description: " + e.getDescription() + "\n -- Name:"
+		System.out.println("recu:\n -- Id: " + e.getId()+"--"+e.getEnvironment() + "\n -- Description: " + e.getDescription() + "\n -- Name:"
 				+ e.getName() + "\n -- Date: " + e.getDate() + "\n -_______________________-");
 
 	}
